@@ -27,7 +27,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytimes");
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   //}
-}
+})
 
 // Start the API server
 app.listen(PORT, function() {
