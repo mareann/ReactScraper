@@ -41,7 +41,9 @@ class Articles extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.title && this.state.url) {
+    //if (this.state.title && this.state.url) 
+    {
+      console.log("handleFormSubmit")
       API.saveArticle({
         title: this.state.title,
         url: this.state.url
