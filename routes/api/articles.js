@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const articlesController = require("../../controllers/articlesController");
-
+//can be in index.js?
 // Matches with "/api/articles"
 router.route("/")
   .get(articlesController.findAll)

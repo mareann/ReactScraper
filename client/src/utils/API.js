@@ -17,6 +17,8 @@ export default {
 
   // Gets all articles
   getArticles: function() {
+    // get articles from nyt articles
+    //return axios.get("/api/nyt", {params: filterParams(params)})
     return axios.get("/api/articles");
   },
   // Gets the article with the given id

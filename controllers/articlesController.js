@@ -1,5 +1,7 @@
 const db = require("../models");
-
+// put nyt query in nytController file
+//interact with db
+//can put routes and controller together
 // Defining methods for the article_Controller
 module.exports  = {
 
@@ -7,6 +9,7 @@ module.exports  = {
     db.Article
       .find(req.query)
       .sort({ date: -1 })
+      //fix dbArticle???
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
