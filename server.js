@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // app.use(express.static("client/build"));
 app.use(express.static("client/build"));
 // Add routes, both API and view
-require("./controller/controller.js")(app);
+//require("./controllers/articlesController.js")(app);
 app.use(routes);
 
 // Connect to the Mongo DB
