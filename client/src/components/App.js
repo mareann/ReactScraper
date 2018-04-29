@@ -160,10 +160,10 @@ fetchArticles=()=> {
 
       <br /><br/>
       <Route exact path='/' render={({match})=> (
-         <ArticlesList articles={this.state.articles} onLoadClick={this.handleLoadClick} onReadingClick={this.handleReadingClick} />
+         <ArticlesList articles={this.state.articles} onClick={this.handleLoadClick} onReadingClick={this.handleReadingClick} />
       )} />
       <Route exact path='/articles' render={({match})=> (
-         <ArticlesList articles={this.state.articles} onLoadClick={this.handleLoadClick} onReadingClick={this.handleArticleClick} />
+         <ArticlesList articles={this.state.articles} onClick={this.handleLoadClick} onReadingClick={this.handleArticleClick} />
       )} />
       <Route exact path='/readinglist' render={({match}) => (
         <ReadingList readingList={this.state.readingList}/>
